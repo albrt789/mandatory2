@@ -1,0 +1,247 @@
+/* MANDATORY - khusus halaman reservasi (dimuat setelah style.css) */
+body {
+  background: var(--red-d);
+  color: #fff;
+  font-family: 'Inter', 'Poppins', sans-serif
+}
+
+.nav {
+  background: var(--red-d);
+  border-bottom: 1px solid rgba(255, 255, 255, .35);
+  position: static
+}
+
+.nav ul {
+  font-size: .8rem;
+  letter-spacing: 0;
+  text-transform: none
+}
+
+.nav .btn {
+  border-color: rgba(255, 255, 255, .7);
+  color: #fff;
+  border-radius: 4px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: .8rem
+}
+
+.nav .btn:hover {
+  background: #fff;
+  color: var(--red-d)
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 4rem;
+  padding: 3rem clamp(1rem, 5vw, 4rem) 4rem;
+  max-width: 80rem;
+  margin: auto;
+  align-items: start
+}
+
+.crumb {
+  font-size: .62rem;
+  letter-spacing: .08em;
+  text-transform: uppercase
+}
+
+.crumb:before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  margin-right: .6rem
+}
+
+.left h1 {
+  font-weight: 300;
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  line-height: 1.15;
+  margin: 1.5rem 0
+}
+
+.left>p {
+  font-weight: 300;
+  font-size: .95rem;
+  max-width: 26rem
+}
+
+.left .photo {
+  aspect-ratio: 2/1;
+  min-height: 0;
+  margin-top: 2.5rem;
+  background-color: #d8cfc2
+}
+
+.cap {
+  display: flex;
+  justify-content: space-between;
+  font-size: .6rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  margin: .6rem 0 1.5rem
+}
+
+.left hr {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, .5);
+  margin-bottom: 1rem
+}
+
+.left small {
+  font-size: .85rem;
+  font-weight: 300
+}
+
+.form {
+  background: var(--cream);
+  color: var(--ink);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.1rem
+}
+
+.form header {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 1rem
+}
+
+.form h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: left
+}
+
+.form header span {
+  color: var(--red-d);
+  font-size: .62rem;
+  letter-spacing: .08em
+}
+
+.form header p {
+  width: 100%;
+  flex-basis: 100%;
+  font-size: .75rem;
+  color: var(--mute);
+  margin-top: .3rem
+}
+
+.full {
+  grid-column: 1/-1
+}
+
+.form label {
+  font-size: .72rem;
+  font-weight: 500;
+  display: block
+}
+
+.form label i {
+  font-style: normal;
+  font-weight: 400;
+  color: var(--mute)
+}
+
+.form input,
+.form textarea {
+  display: block;
+  width: 100%;
+  margin-top: .45rem;
+  padding: .8rem 1rem;
+  border: 1px solid var(--line);
+  background: #fffcf6;
+  border-radius: 4px;
+  font-size: .82rem;
+  color: var(--ink)
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: var(--red-d);
+  outline: 0
+}
+
+.submit {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--red-d);
+  color: #fff;
+  border: 0;
+  padding: 1rem 1.2rem;
+  font-size: .85rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 2px
+}
+
+.submit:hover {
+  background: var(--red-dd)
+}
+
+.note {
+  grid-column: 1/-1;
+  background: #f0e9df;
+  padding: 1.1rem 1.2rem;
+  font-size: .72rem;
+  color: var(--mute);
+  display: flex;
+  gap: .9rem
+}
+
+.note b {
+  display: block;
+  color: var(--ink);
+  font-weight: 500;
+  font-size: .8rem
+}
+
+.err {
+  grid-column: 1/-1;
+  color: var(--red-dd);
+  font-size: .75rem
+}
+
+.bar {
+  background: var(--red-dd);
+  padding: 1.6rem clamp(1rem, 5vw, 4rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: .7rem
+}
+
+.bar .name {
+  font-size: 1.1rem;
+  letter-spacing: .04em;
+  margin-left: .8rem
+}
+
+@media(max-width:800px) {
+  .wrap {
+    grid-template-columns: 1fr;
+    gap: 2rem
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+    padding: 1.4rem
+  }
+}
+
+.bar-brand {
+  display: flex;
+  align-items: center
+}
